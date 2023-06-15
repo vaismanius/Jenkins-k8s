@@ -4,7 +4,7 @@ def DEBUG = true
 def appname ="helloworld"
 def DEPLOY = false
 def artifactory = "docker.io" 
-def repo = "elevy99927jbdemo" https://github.com/vaismanius/Jenkins-k8s.git
+def repo = "elevy99927jbdemo" //https://github.com/vaismanius/Jenkins-k8s.git
 def appimage = "${artifactory}/${repo}/${appname}"
 def apptag = "eyal-${build}"
 
