@@ -115,4 +115,5 @@ kubectl patch svc argocd-server -n argocd -p '{"spec": {"type": "LoadBalancer"}}
 <LI>Watch ArgoCD Deploy new version of your applicaction
 <HR>
 # Project Topology
+ 
 <img src="files/JenkinsProject.png">
