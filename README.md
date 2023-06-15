@@ -13,7 +13,7 @@ Add all the files project into your git repo (remote)
 Create a MULTI STEP BUILD docker file that will:
 
 ### Step 1
- Run SonarQube to check the code (it’s fine that it’s not breaking the build at the moment when an issue is being discovered)
+ Canceld
   
 
 ### Step 2 
