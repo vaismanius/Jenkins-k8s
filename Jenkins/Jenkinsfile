@@ -34,18 +34,20 @@ podTemplate(containers: [
             container('jnlp') {
             sh '/usr/bin/git config --global http.sslVerify false'
 	        checkout scm
-		sh "sleep 9999"
+		// sh "sleep 9999"
           }
         } // end chackout
 
         stage('build') {
             container('docker') {
-              echo "Building docker image..."
-	      echo "Original step was using docker for build."
-	      echo "You will need to use kaniko instead"
-              sh "echo docker build -t $appimage --no-cache ."
-              sh "echo docker login $artifactory -u admin -p password"
-              sh "echo docker push $appimage"
+       //        echo "Building docker image..."
+	      // echo "Original step was using docker for build."
+	      // echo "You will need to use kaniko instead"
+       //        sh "echo docker build -t $appimage --no-cache ."
+       //        sh "echo docker login $artifactory -u admin -p password"
+       //        sh "echo docker push $appimage"
+		sh "/kaniko/executor --context=/home/jenkins/agent/workspace/test-job-1/spring-petclinic --dockerfile /home/jenkins/agent/workspace/test-job-1/spring-petclini
+c/Dockerfile --destination=elevy99927jbdemo/spring-petclinic:ori --force"
             }
         } //end build
 
