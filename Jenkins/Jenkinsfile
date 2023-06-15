@@ -4,9 +4,9 @@ def DEBUG = true
 def appname ="helloworld"
 def DEPLOY = false
 def artifactory = "docker.io" 
-def repo = "elevy99927" # ***Put your  repo here!! ***
+def repo = "elevy99927jbdemo" # ***Put your  repo here!! ***
 def appimage = "${artifactory}/${repo}/${appname}"
-def apptag = "${build}"
+def apptag = "eyal-${build}"
 
 def kubernetesurl = "https://kubernetes.default.svc"
 
