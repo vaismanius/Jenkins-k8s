@@ -34,6 +34,7 @@ podTemplate(containers: [
             container('jnlp') {
             sh '/usr/bin/git config --global http.sslVerify false'
 	        checkout scm
+		sh "sleep 9999"
           }
         } // end chackout
 
